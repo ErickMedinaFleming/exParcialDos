@@ -56,8 +56,8 @@ app.listen(port,function(req,res){
 })
 
 
-//app.listen('*',function(req,res){
-//	res.send({
-//		error: 'Ruta no valida'
-//	})
-//})
+app.get('*',function(req,res){
+	res.send({
+		error : 'Ruta no valida'
+	})
+})
